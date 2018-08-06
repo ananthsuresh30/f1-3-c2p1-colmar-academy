@@ -1,0 +1,572 @@
+.banner {
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background: white;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+
+.left img {
+    height: 32px;
+}
+
+.name .first{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: dimgrey;
+    margin-bottom: 4px;
+}
+
+.name .last {
+    font-family: 'Ubuntu', sans-serif;
+    color: silver;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 16px 8px;
+}
+
+a {
+  font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: dimgrey;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul {
+  margin-right: 16px;
+}
+
+header {
+  height: 64px;
+}
+
+@media only screen and (min-width: 470px) {
+  .mobile {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    align-items: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  ul li {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      vertical-align: middle;
+      padding: 0px 30px;
+  }
+}
+
+.mobile {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: white;
+}
+
+.new-container {
+  display: flex;
+  width: 100%;
+}
+
+.big-pic {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.big-pic img {
+  width: 100%;
+}
+
+.display {
+  background-color: #DCDCDC;
+}
+
+.explanation {
+  width: 40%;
+}
+
+.silly-words {
+    width: 500px;
+    padding-top: 180px;
+    padding-left: 24px;
+}
+
+.silly-words h1 {
+    font-family: 'Arial', sans-serif;
+    color: 	#505050;
+    font-weight: 900;;
+    font-size: 2.8rem;
+    padding-bottom: 48px;
+    line-height: 3.5rem;
+}
+
+.silly-words p {
+  font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: 	#505050;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    padding-bottom: 48px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: 	#505050;
+    width: 500px;
+    height: 60px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.button a {
+  font-family: 'Arial', sans-serif;
+    color: white;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: normal;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 470px){
+  .big-pic {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .display .new-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .explanation {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .silly-words {
+   padding: 32px 16px;
+ }
+
+ .silly-words h1 {
+   font-size: 1.2rem;
+   padding: 0px;
+ }
+
+ .silly-words p {
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 0.8rem;
+   padding: 32px 0px 24px 0px;
+ }
+
+ .button {
+   width: 100%;
+   margin: 0px;
+   vertical-align: middle;
+ }
+}
+
+
+
+html {
+  font-size: 18px;
+}
+
+.huge-panel {
+    background-color: #F8F8F8;
+    margin-bottom: 32px;
+}
+
+.emanuel {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.emanuel img {
+  width: 100%;
+}
+
+.quote {
+  font-family: 'Ubuntu', sans-serif;
+    margin-left: 24px;
+    padding-top: 32px;
+    margin-right: 24px;
+}
+
+.quote h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #505050;
+    padding-bottom: 24px;
+}
+
+.quote p {
+  line-height: 1.5;
+  color: dimgrey;
+    font-size: 1rem;
+    padding-bottom: 32px;
+}
+
+.quote span {
+  color: dimgrey;
+    font-size: 1rem;
+}
+
+.about {
+    width: 40%;
+    padding-top: 16px;
+    border-left: 2px solid #DCDCDC;
+}
+
+.small-pic {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 2px solid #DCDCDC;
+}
+
+.small-pic img {
+  width: 35%;
+  height: auto;
+}
+
+.small-pic .text {
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 24px;
+  width: 65%;
+}
+
+.text h2 {
+  padding-bottom: 8px;
+  color: #505050;
+  font-size: 2rem;
+}
+
+.text h3 {
+  color: dimgrey;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  font-size: 1rem;
+}
+
+.text span {
+  color: blue;
+}
+
+ .geezer {
+  background-color: #DCDCDC;
+}
+
+.camp {
+  margin-left: 2px;
+  margin-top: 2px;
+  border-top: 2px solid #DCDCDC;
+}
+
+.shadow {
+  margin-left: 2px;
+}
+
+.courses {
+  flex-direction: column;
+  display: flex;
+}
+
+@media only screen and (max-width: 470px) {
+  .emanuel {
+    display: none;
+  }
+
+   .huge-panel .new-container {
+    background-color: #F8F8F8 ;
+  }
+
+  .small-pic {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    padding: 16px 16px 64px 16px;
+    border: 0px;
+  }
+
+  .small-pic img {
+    width: 100%;
+  }
+
+  .small-pic .text {
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 16px;
+    width: 100%;
+  }
+
+  .about {
+      width: 100%;;
+      padding-top: 16px;
+      border: 0px;
+  }
+
+  .text h2 {
+    padding-top: 10px;
+  }
+}
+
+.start-learning {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: 	#DCDCDC;
+  font-size: 2rem;
+    padding: 32px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #505050;
+    width: 100%;
+    margin: 0px;
+}
+
+.new-text {
+  background-color: white;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+}
+
+.new-text h2 {
+  padding-bottom: 4px;
+  color: #505050;
+  font-size: 1.7rem;
+}
+
+.new-text p {
+  color: dimgrey;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+.learn {
+  background-color: #DCDCDC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 72px;
+}
+
+.newest-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.course {
+  height: 300px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 30%;
+  margin: 0px 16px 24px 16px;
+}
+
+.course span {
+  color: dimgrey;
+  padding: 4px 0px;
+}
+
+
+.course img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+
+
+.course-display {
+  background-color: #DCDCDC;
+}
+
+.soft {
+  padding-bottom: 51px;
+}
+
+.course-display-sec {
+  background-color: #DCDCDC;
+  padding-top: 83px;
+  padding-bottom: 83px;
+}
+
+@media only screen and (max-width: 470px) {
+  .new-courses {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .course-display {
+    display: none;
+  }
+
+  .course-display-sec {
+    display: none;
+  }
+
+  .new-courses h1{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px 16px;
+    color: #505050;
+    background-color: #DCDCDC;
+    margin-bottom: 8px;
+  }
+
+  .start-learning {
+    background-color: #F8F8F8
+  }
+
+  .geezer {
+    padding-bottom: 32px;
+    background-color: #F8F8F8;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .new-courses {
+    display: none;
+  }
+}
+.thesis {
+  background-color: white;
+}
+
+.panel {
+  border: 0px;
+}
+
+.video video {
+  border: 4px solid #DCDCDC;
+}
+
+.footer {
+  margin-left: 2px;
+  margin-right: 2px;
+  border-top: 2px solid #E8E8E8;
+  font-family: 'Ubuntu', sans-serif;
+  color: dimgrey;
+  background-color: #F8F8F8;
+  display: flex;
+  width: 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+
+html {
+  background-color: #F8F8F8;
+}
+
+.video {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.description {
+  font-family: 'Ubuntu', sans-serif;
+    margin-left: 24px;
+    padding-top: 32px;
+    margin-right: 24px;
+}
+
+.description h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #505050;
+    padding-bottom: 24px;
+}
+
+.description p {
+  line-height: 1.5;
+  color: dimgrey;
+    font-size: 1rem;
+    padding-bottom: 32px;
+}
+
+@media only screen and (max-width: 470px) {
+  .description {
+    display: none;
+  }
+
+.huge-panel {
+  margin-bottom: 24px;
+}
+
+.video {
+  padding: 0px;
+  width: 100%;
+}
+
+  .panel {
+    display: none;
+  }
+
+  .thesis {
+    padding-top: 64px;
+    padding-bottom: 16px;
+  }
+
+  .footer {
+    padding: 16px;
+    border-top: 0px;
+    border-bottom: 2px solid dimgrey;
+  }
+
+  .footer nav {
+    display: none;
+  }
+}
